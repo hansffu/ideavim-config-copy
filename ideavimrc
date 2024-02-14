@@ -1,0 +1,42 @@
+let mapleader = " "
+inoremap jk <ESC>
+inoremap hh <ESC>
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set ReplaceWithRegister
+set highlightedyank
+set exchange
+set NERDTree
+set sneak
+
+set which-key
+set notimeout
+
+set nu
+set rnu
+set clipboard+=ideaput
+set idearefactormode=visual
+set showmode
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+set clipboard+=unnamed
+
+source ~/.config/ideavim/modules/code.vim
+source ~/.config/ideavim/modules/file.vim
+source ~/.config/ideavim/modules/project.vim
+source ~/.config/ideavim/modules/search.vim
+source ~/.config/ideavim/modules/navigation.vim
+source ~/.config/ideavim/modules/run.vim
+source ~/.config/ideavim/modules/idea.vim
+source ~/.config/ideavim/modules/git.vim
+source ~/.config/ideavim/modules/buffer.vim
+source ~/.config/ideavim/modules/errors.vim
+source ~/.config/ideavim/modules/window.vim
+source ~/.config/ideavim/modules/open.vim
+
+
+nmap <leader>hr :source ~/.ideavimrc <cr>
