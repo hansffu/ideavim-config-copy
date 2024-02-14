@@ -1,6 +1,9 @@
 let mapleader = " "
+" escape chords
 inoremap jk <ESC>
 inoremap hh <ESC>
+
+" plugins
 set surround
 set multiple-cursors
 set commentary
@@ -9,27 +12,26 @@ set ReplaceWithRegister
 set highlightedyank
 set exchange
 set NERDTree
-set sneak
-
+Plug 'justinmk/vim-sneak'
 set which-key
-set notimeout
 
-set nu
-set rnu
-set clipboard+=ideaput
+" settings
+set number
+set relativenumber
+set clipboard+=unnamed
 set idearefactormode=visual
 set showmode
 set incsearch
 set hlsearch
 set ignorecase
 set smartcase
-set clipboard+=unnamed
+set notimeout
 
 source ~/.config/ideavim/modules/code.vim
 source ~/.config/ideavim/modules/file.vim
 source ~/.config/ideavim/modules/project.vim
 source ~/.config/ideavim/modules/search.vim
-source ~/.config/ideavim/modules/navigation.vim
+source ~/.config/ideavim/modules/easymotion.vim
 source ~/.config/ideavim/modules/run.vim
 source ~/.config/ideavim/modules/idea.vim
 source ~/.config/ideavim/modules/git.vim
@@ -37,6 +39,7 @@ source ~/.config/ideavim/modules/buffer.vim
 source ~/.config/ideavim/modules/errors.vim
 source ~/.config/ideavim/modules/window.vim
 source ~/.config/ideavim/modules/open.vim
+source ~/.config/ideavim/modules/insert.vim
 
 
 nmap <leader>hr :source ~/.ideavimrc <cr>

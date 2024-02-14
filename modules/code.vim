@@ -1,16 +1,19 @@
-"jump to x
-nmap <leader>cd    :action GotoDeclaration<CR>
-nmap <leader>ci    :action GotoImplementation<CR>
-nmap <leader>cD    :action ShowUsages<CR>
+" goto
+nmap <leader>cd <Action>(GotoDeclaration)
+nmap <leader>ci <Action>(GotoImplementation)
+nmap <leader>cD <Action>(ShowUsages)
+nmap <Leader>cj <Action>(SearchEverywhere)
+" Show documentation
 
-nmap <leader>cr    :action RenameElement<CR>
-nmap <leader>cR    :action RenameElement<CR>
-nmap <leader>cf    :action ReformatCode<CR>
-nmap <leader>cp    :action ReformatWithPrettierAction<CR>
-nmap <leader>cr    :action RenameElement<CR>
-nmap <leader>co    :action OptimizeImports<cr>
+" refactor
+nmap <leader>cr <Action>(RenameElement)
+nmap <leader>cR <Action>(RenameElement)
+nmap <leader>cf <Action>(ReformatCode)
+nmap <leader>cp <Action>(ReformatWithPrettierAction)
+nmap <leader>cr <Action>(RenameElement)
+nmap <leader>co <Action>(OptimizeImports)
+nmap <leader>clrev <Action>(IntroduceVariable)
 
-nmap <leader>clrev :action IntroduceVariable<CR>
-
+nmap <Leader>cc <Action>(CompileDirty)
 
 nmap <leader>ca <Action>(ShowIntentionActions)
